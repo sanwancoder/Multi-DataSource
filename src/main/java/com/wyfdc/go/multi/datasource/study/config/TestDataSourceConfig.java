@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 /**
- * @Author:   
+ * @Author:
  */
 @Configuration
 @tk.mybatis.spring.annotation.MapperScan(basePackages = TestDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "testSqlSessionFactory")
@@ -20,16 +20,16 @@ public class TestDataSourceConfig {
   static final String PACKAGE = "com.wyfdc.go.multi.datasource.study.mapper.test";
 
 
-  @Value("${spring.datasource.test.datasource.url}")
+  @Value("${spring.datasource.test.url}")
   private String url;
 
-  @Value("${spring.datasource.test.datasource.username}")
+  @Value("${spring.datasource.test.username}")
   private String user;
 
-  @Value("${spring.datasource.test.datasource.password}")
+  @Value("${spring.datasource.test.password}")
   private String password;
 
-  @Value("${spring.datasource.test.datasource.driverClassName}")
+  @Value("${spring.datasource.test.driverClassName}")
   private String driverClass;
 
 
